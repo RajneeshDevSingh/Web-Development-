@@ -1,0 +1,25 @@
+*{
+    /* background-color: rgb(14, 235, 235); */
+}
+
+.banner
+{
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)) ,url(/freeCode/html/back2.jpg); 
+  background-size: cover;
+  background-position: center;
+
+}
+
+.navbar
+{
+    background-color: red;
+
+}
+
+.navbar li{
+
+    float: left;
+}
