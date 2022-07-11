@@ -1,25 +1,70 @@
 *{
-    /* background-color: rgb(14, 235, 235); */
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black
+
+    
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(62, 148, 176);
+    /* text-decoration: none; */
+
 }
 
-.banner
-{
-  width: 100vw;
-  height: 100vh;
-  /* background-color: rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)) ,url(/freeCode/html/back2.jpg); 
-  background-size: cover;
-  background-position: center;
 
+.logo
+{
+    height: 5vh;
+    width: 3%;
+    /* display: inline-block; */
+    
+    
+    
+}
+
+header{
+    display: flex;
+    background-color: lightcoral;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    height: 4rem;
 }
 
 .navbar
 {
-    background-color: red;
+
+    float: right;
+    width: 30rem;
+    list-style: none;
+    
+    display: flex;
+    align-content: flex-end;
+    /* border: 3px solid black; */
+
+    justify-content: space-around;
+    flex-grow: 2;
+}
+
+ul li{
+    flex-direction: row;
+    
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
 
 }
 
-.navbar li{
+.call button
+{
+    padding-right: 5%;
+    height: 6vh;
+    width: 8vw;
+    font-weight: bold;
+    border-radius: 10%;
+    font-size: 15px;
 
-    float: left;
 }
