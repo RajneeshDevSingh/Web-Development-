@@ -20,6 +20,18 @@ body {
     font-size: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.options-cont:hover
+{
+    cursor: pointer;
+}
+
+.tools-cont:hover{
+    cursor: pointer;
+}
+
+.pencil-color-cont:hover{
+    cursor: pointer;
+}
 .tools-cont {
     display: flex;
     height: 5rem;
