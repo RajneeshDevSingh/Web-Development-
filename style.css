@@ -1,0 +1,203 @@
+*{
+   
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.toolbox-cont{
+    height: 5rem;
+    background-color:  #4b4b4b;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.toolbox-cont>*
+{
+    margin-left: 4rem;
+    border-radius: 3px;
+
+}
+
+.toolbox-priority-cont
+{
+    height: 3.5rem;
+    width: 20rem;
+    background-color: #3d3d3d;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+}
+
+.ation-btn-cont
+{
+    height: 3.5rem;
+    width: 8rem;
+    background-color: #3d3d3d;
+    display: flex;
+    
+
+}
+.ation-btn-cont>*
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 2rem;
+    border-radius: 3px;
+    color: #d1d8e0;
+}
+
+.color{
+    height: 2rem;
+    width: 3rem;
+    border-radius: 3px;
+
+}
+
+.lightpink
+{
+   
+    background-color: lightpink;
+
+}
+
+.lightblue
+{
+    background-color: lightblue;
+}
+
+.lightgreen
+{
+    background-color: lightgreen;
+}
+.black{
+    background-color: black;
+}
+
+
+
+.ation-btn-cont>*:hover
+{
+    background-color:aqua;
+}
+
+.toolbox-priority-cont>*:hover
+{
+    background-color: aqua;
+}
+
+
+.modal-cont
+{
+    height: 20rem;
+    width: 35rem;
+    background-color:  #4b4b4b;
+    
+    position: absolute;
+
+    top: calc((100vh - 20rem)/2);
+    left: calc((100vw - 35rem)/2);
+    display: none; 
+    /*flex display handled in java script  */ 
+
+
+}
+
+.active
+{
+    border: 2px solid rgba(238, 196, 12, 0.945);
+}
+
+
+.textarea-cont
+{
+    height: 100%;
+    width: 75%;
+    border: none;
+    outline: none;
+    background-color:#535c68;
+    resize: none;
+    font-size: 2rem;
+    padding: 2rem;
+    
+
+}
+
+.priority-colors-cont
+{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   
+
+}
+.priority-color
+{
+   height: 3rem;
+   width: 5rem;
+   border-radius: 3px;
+
+}
+
+
+.main-cont {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 4rem;
+    flex-wrap: wrap;  /* for next row */
+  }
+  
+  .ticket-cont {
+    height: 15rem;
+    width: 18rem;
+    background-color: lightgreen;
+  }
+  
+  .ticket-color {
+    height: 1.5rem;
+    
+  }
+  
+  .ticket-id {
+    height: 2rem;
+    background-color:#4b4b4b
+  }
+  
+  .task-area {
+    height: calc(100% -1rem - 2rem - 2rem);  /* 100% - ticket-color - ticket-id */
+    font-size: 1.5rem;
+    padding: 5px;
+    outline: none;
+    word-wrap: break-word;
+  }
+
+  .ticket-lock{
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 6rem;
+    font-size: 2.5rem;
+    margin-right: 20px;
+
+   
+
+
+}
+
+

@@ -4,24 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Advance TO Do List</title>
+
+    <link  rel="stylesheet"  href="./style.css">
+   
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
+     
+    <div class="toolbox-cont">
 
-    <button>SayHi </button>
-    <script>
-        let btn = document.querySelector("button");
-        btn.addEventListener("click" , function(e)
-        {
-            let newEle = document.createElement("div");
-            newEle.innerText = "hello Sir";
+        <div class="toolbox-priority-cont">
+            <div class="lightpink color"></div>
+             <div class="lightgreen color"></div>
+             <div class="lightblue color"></div>
+            <div class="black color"></div>
 
-            let body = document.querySelector("body");
-            body.appendChild(newEle);
-        })
-    </script>
-    
+
+        </div>
+
+        <div class="ation-btn-cont">
+            <div class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+
+            </div>
+
+            <div class="remove-btn">
+                <i class="fa-solid fa-xmark"></i>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- after ticket generated -->
+    <div class="main-cont">
+        <!-- <div class="ticket-cont">
+
+
+            <div class="ticket-color"></div>
+            <div class="ticket-id"></div>
+            <div class="task-area"></div>
+            <div class="ticket-lock">
+                <i class="fa-solid fa-lock"></i></i>
+            </div>
+            
+
+        </div> -->
+         
+        
+
+    </div>
+
+
+    <!-- ticket box -->
+    <div class="modal-cont">
+        <textarea  spellcheck="false" class="textarea-cont" placeholder="Enter you Task"></textarea>
+        <div class="priority-colors-cont">
+            <div class="lightpink priority-color"></div>
+            <div class="lightblue priority-color"></div>
+            <div class="lightgreen priority-color"></div>
+            <div class="black priority-color active"></div>
+        </div>
+
+    </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/shortid/2.2.16/index.js" integrity="sha512-e/wLqpGqdP/7WDzpXEOu7VaJ3WfcKMiWkgdeExE+Wm1Huwft5n9/MGQYYswDhJSlQS5j+VPJmg/rF62KinJkPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+
+
+    <script src="./script.js"></script>
+
+
 </body>
 </html>
+
+
+
+
+
 
 
