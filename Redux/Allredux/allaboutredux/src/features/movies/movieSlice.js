@@ -3,10 +3,10 @@ import movieApi from "../../common/apis/MovieApi"
 import APIKey from "../../common/apis/movieApikey"
 
 
-export const fetchAsynchMovies = createAsyncThunk('movies/fetchAsynchMovies' , async ()=>
+export const fetchAsynchMovies = createAsyncThunk('movies/fetchAsynchMovies' , async (term)=>
 {
-  const movieText = "Harry"
-  const response = await movieApi.get(`?apikey=${APIKey}&s=${movieText}&type=movie`);
+  
+  const response = await movieApi.get(`?apikey=${APIKey}&s=${term}&type=movie`);
   // .catch((eer)=>
   // {
   //   console.log("Error = :",eer)
@@ -18,10 +18,10 @@ export const fetchAsynchMovies = createAsyncThunk('movies/fetchAsynchMovies' , a
 })
 
 
-export const fetchAsynchShows = createAsyncThunk('movies/fetchAsynchShows' , async ()=>
+export const fetchAsynchShows = createAsyncThunk('movies/fetchAsynchShows' , async (term)=>
 {
-  const seriesText = "Friends"
-  const response = await movieApi.get(`?apikey=${APIKey}&s=${seriesText}&type=series`);
+  
+  const response = await movieApi.get(`?apikey=${APIKey}&s=${term}&type=series`);
   
   console.log("Response = :" , response)
   return response.data;
