@@ -2,6 +2,7 @@ import { createSlice , createAsyncThunk } from '@reduxjs/toolkit'
 import movieApi from "../../common/apis/MovieApi"
 import APIKey from "../../common/apis/movieApikey"
 
+
 export const fetchAsynchMovies = createAsyncThunk('movies/fetchAsynchMovies' , async ()=>
 {
   const movieText = "Harry"
@@ -49,9 +50,10 @@ const initialState = {
     name : "movies",
     initialState,
     reducers : {
-        addMovies : (state , {payload}) =>
+        
+        removeSelectedMovieOrShow:(state)=>
         {
-            state.movies = payload;
+          state.selectedMovieOrShow = {};
         }
     },
     extraReducers:
@@ -91,5 +93,5 @@ const initialState = {
   export const getAllMovies = (state) => state.movies.movies
   export const getAllShows = (state) => state.movies.shows
   export const getSelectedMovieOrShow = (state) => state.movies.selectedMovieOrShow
-  export const {addMovies} = movieSlice.actions;
+  export const {removeSelectedMovieOrShow} = movieSlice.actions;
   export default movieSlice.reducer;

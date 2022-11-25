@@ -6,6 +6,10 @@ import { legacy_createStore as createStore} from 'redux'
 
 import { combineReducers } from 'redux'
 
+import { applyMiddleware} from 'redux';
+import logger from 'redux-logger'
+ 
+
 // const createStore = redux.createStore
 
 
@@ -73,11 +77,11 @@ const rootReducer = combineReducers({
 })
 
 
-const store = createStore(rootReducer)
+const store = createStore(rootReducer , applyMiddleware(logger))
 
 console.log("initialStte" , store.getState())
 
-const unsubscribe = store.subscribe(()=> {console.log("Updated store" , store.getState())})
+const unsubscribe = store.subscribe(()=> {})  //console.log("Updated store" , store.getState())
 
 
 store.dispatch(buyCake())

@@ -12,15 +12,17 @@
 
 .card-top {
   height: 300px;
-
+  
   img {
     width: 100%;
     height: 100%;
+    
   }
 }
 
 .card-bottom {
   padding: 20px;
+ 
 }
 .card-info {
   color: $font-primary;

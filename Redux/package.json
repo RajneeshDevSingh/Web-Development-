@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "react-router-dom": "^6.4.3",
+    "redux": "^4.2.0",
+    "redux-logger": "^3.0.6"
+  }
+}
